@@ -1,0 +1,62 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='/public/css/stylesheet.css')
+  title
+.container
+  h1(style='background-color: black; color: white;') GENQ KYC FORM
+  div
+    h3 Bio Data
+    form.form(name='userform' method='POST' action='/api/reguser')
+      .form-control
+        label(for='firstname') firstname
+        input#firstname(type='text' placeholder='enter firstname')
+        small Error Message
+      .form-control
+        label(for='lastname') lastname
+        input#lastname(type='text' placeholder='enter lastname')
+        small Error Message
+      .form-control
+        label(for='date') Select date(YY/MM/DD):
+        input#date(type='date' name='date' placeholder='date')
+        small Error Message
+      .form-control
+        label(for='gender') Gender
+        input#gender(type='text' placeholder='enter gender')
+        small Error Message
+  div
+    h3 Location
+    .form-control
+      label(for='country') country
+      input#country(type='country' placeholder='Enter country')
+      small Error Message
+    .form-control
+      label(for='city') city
+      input#city(type='city' placeholder='enter city')
+      small Error Message
+    .form-control
+      label(for='address') Address
+      input#address(type='address' placeholder='Enter address')
+      small Error Message
+    .form-control
+      label(for='postalcode') postal code
+      input#postalcode(type='postalcode' placeholder='Enter postalcode')
+      small Error Message
+  div
+    h3 contacts and address
+    .form-control
+      label(for='phonenumber') phone number
+      input#phonenumber(type='phonenumber' placeholder='Enter phonenumber')
+      small Error Message
+    .form-control
+      label(for='othernumber') other number
+      input#othernumber(type='othernumber' placeholder='Enter tel 2')
+      small Error Message
+    .form-control
+      label(for='email') Email
+      input#email(type='email' placeholder='Enter email')
+      small Error Message
+  button(type='submit') Submit
+script(src='/public/js/valid.js')

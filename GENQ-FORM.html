@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/css/stylesheet.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="background-color: black; color: white;">GENQ KYC FORM</h1>
+      <div>
+      <H3>Bio Data</H3>
+      <form name="form" class="form" method="POST" action="/api/reguser">
+        <div class="form-control">
+          <label for="firstname">firstname</label>
+          <input type="text" id="firstname" placeholder="enter firstname" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <label for="lastname">lastname</label>
+            <input type="text" id="lastname" placeholder="enter lastname" />
+            <small>Error Message</small>
+          </div>
+        <div class="form-control">
+            <label for="date">Select date(YY/MM/DD):</label>
+            <input type="date" id="date" name="date" placeholder="date">
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" placeholder="enter gender" />
+            <small>Error Message</small>
+          </div>
+        </div>
+        <div>
+        <h3>Location</h3>
+        <div class="form-control">
+          <label for="country">country</label>
+          <input type="country" id="country" placeholder="Enter country" />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+          <label for="city">city</label>
+          <input
+            type="city"
+            id="city"
+            placeholder="enter city"
+          />
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <label for="address">Address</label>
+            <input type="address" id="address" placeholder="Enter address" />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="postalcode">postal code</label>
+            <input type="postalcode" id="postalcode" placeholder="Enter postalcode" />
+            <small>Error Message</small>
+          </div>
+        </div>
+        <div>
+          <h3>contacts and address</h3>
+          <div class="form-control">
+            <label for="phonenumber">phone number</label>
+            <input type="phonenumber" id="phonenumber" placeholder="Enter phonenumber" />
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label for="othernumber">other number</label>
+            <input type="othernumber" id="othernumber" placeholder="Enter tel 2" />
+            <small>Error Message</small>
+          </div><div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email" />
+            <small>Error Message</small>
+          </div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="/public/js/valid.js"></script>
+  </body>
+</html>
