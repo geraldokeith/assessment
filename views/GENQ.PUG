@@ -9,7 +9,7 @@ head
   h1(style='background-color: black; color: white;') GENQ KYC FORM
   div
     h3 Bio Data
-    form.form(name='userform' method='POST' action='/api/reguser')
+    form.form(name='userform' method='POST' action='/api/reguser' onsubmit='validate')
       .form-control
         label(for='firstname') firstname
         input#firstname(type='text' placeholder='enter firstname')

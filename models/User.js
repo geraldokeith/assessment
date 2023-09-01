@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema({
 	gender: { type: String, trim: true},
 	address: { type: String, trim: true },
 	date: { type: String, trim: true },
+	postalcode: { type: String, trim: true },
 	
 });
 
