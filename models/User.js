@@ -4,10 +4,9 @@ const userSchema = new mongoose.Schema({
 	lastname: { type: String, trim: true },
 	email: { type: String, unique: true, trim: true },
 	phonenumber: { type: String, unique: true, trim: true },
-	password: { type: String, unique: true, trim: true },
+	gender: { type: String, trim: true},
 	address: { type: String, trim: true },
-	maritalstatus: { type: String, enum: ["select", "single", "married", "others"] },
-  role: { type: String, enum: ["manager", "parking-unit", "battery-unit", "car-tire-clinic"]},
+	date: { type: String, trim: true },
 	
 });
 

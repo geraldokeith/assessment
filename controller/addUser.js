@@ -6,9 +6,9 @@ const addUser = async (req, res) => {
 			!req.body.firstname ||
 			!req.body.lastname ||
 			!req.body.email ||
-			!req.body.phonenumber ||
-			!req.body.password ||
-			!req.body.role
+			!req.body.gender ||
+			!req.body.date ||
+			!req.body.address
 		) {
 			throw new Error("Invalid or missing fields");
 		}
